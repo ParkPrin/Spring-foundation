@@ -35,12 +35,12 @@ Web Layer, Business Layer, Data Layer로 정의
 - Business Layer: 내부 정책에 따른 logic를 개발하며, 주로 해당 부분을 개발
 - Data Layer: 데이터 베이스 및 외부와의 연동을 처리
 
-@Aspect: AOP를 정의하는 Class에 할당
-@Pointcut: 기능을 어디에 적용시킬지 지점설정
-@Before: 메소드 실행하기 이전
-@After 메소드가 성공적으로 실행 후, 예외가 발생 되더라도 실행
-@AfterReturing 메소드 호출 성공 실행 시
-@AfterThrowing 메소드 호출 실패 예외 발생
-@Afound Before / after 모두 제어
+@Aspect: AOP를 정의하는 Class에 할당 <br>
+@Pointcut: 기능을 어디에 적용시킬지 지점설정 <br>
+@Before: 메소드 실행하기 이전 <br>
+@After 메소드가 성공적으로 실행 후, 예외가 발생 되더라도 실행 <br>
+@AfterReturing 메소드 호출 성공 실행 시 <br>
+@AfterThrowing 메소드 호출 실패 예외 발생 <br>
+@Afound Before / after 모두 제어 <br>
 
 ### PSA(이식가능한 추상화)
