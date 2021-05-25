@@ -27,6 +27,20 @@ DI를 통하여 불가능한 상황을 Mock와 같은 기술을 통하여, 안�
 코드를 확장하거나 변경 할 때 영향을 최소화한다.(추상화)
 순환참조을 막을 수 있다.
 
-### AOP
+### AOP(Aspect Oriented Programming)
+관점지향 프로그램
+스프링 어플리케이션은 대부분 특별한 경우를 제외 하고는 MVC 웹 어플리케이션에서는
+Web Layer, Business Layer, Data Layer로 정의
+- Web Layer: REST API를 제공하며, Client 중심의 로직 적용
+- Business Layer: 내부 정책에 따른 logic를 개발하며, 주로 해당 부분을 개발
+- Data Layer: 데이터 베이스 및 외부와의 연동을 처리
+
+@Aspect: AOP를 정의하는 Class에 할당
+@Pointcut: 기능을 어디에 적용시킬지 지점설정
+@Before: 메소드 실행하기 이전
+@After 메소드가 성공적으로 실행 후, 예외가 발생 되더라도 실행
+@AfterReturing 메소드 호출 성공 실행 시
+@AfterThrowing 메소드 호출 실패 예외 발생
+@Afound Before / after 모두 제어
 
 ### PSA(이식가능한 추상화)
