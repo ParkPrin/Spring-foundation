@@ -58,15 +58,15 @@ Web Layer, Business Layer, Data Layer로 정의
 @RequestParam: URL Query Parameter 맵핑 <br>
 @RequestBody: Http Body를 Parsing 맵핑 <br>
 @Valid: POJO Java class의 검증 <br>
-@Configration: 1개 이상의 bean을 등록 할 때 설정
-@Component: 1개의 Class 단위로 등록 할 때 사용
-@Bean: 1개의 외부 library로부터 생성한 객체를 등록 시 사용
-@Autowired: DI를 위한 곳에 사용
-@Qualifier: @Autowired 사용시 bean이 2개 이상 일때 명시적 사용
-@Resource: @Autowired + @Qualifier의 개념으로 이해
-@Aspect: AOP 적용시 사용
-@Before: AOP 메소드 이전 호출 지정
-@After: AOP 메소드 호출 이후 지정 예외 발생 포함
-@Around: AOP 이전/이후 모두 포함 예외 발생 포함
-@AfterReturning: AOP 메소드의 호출이 정상일 때 실행
-@AfterThrowing: AOP시 해당 메소드가 예외 발생시 지정
+@Configration: 1개 이상의 bean을 등록 할 때 설정<br>
+@Component: 1개의 Class 단위로 등록 할 때 사용<br>
+@Bean: 1개의 외부 library로부터 생성한 객체를 등록 시 사용<br>
+@Autowired: DI를 위한 곳에 사용<br>
+@Qualifier: @Autowired 사용시 bean이 2개 이상 일때 명시적 사용<br>
+@Resource: @Autowired + @Qualifier의 개념으로 이해<br>
+@Aspect: AOP 적용시 사용<br>
+@Before: AOP 메소드 이전 호출 지정<br>
+@After: AOP 메소드 호출 이후 지정 예외 발생 포함<br>
+@Around: AOP 이전/이후 모두 포함 예외 발생 포함<br>
+@AfterReturning: AOP 메소드의 호출이 정상일 때 실행<br>
+@AfterThrowing: AOP시 해당 메소드가 예외 발생시 지정<br>
