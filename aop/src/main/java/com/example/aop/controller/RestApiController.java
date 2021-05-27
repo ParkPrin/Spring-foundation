@@ -20,7 +20,7 @@ public class RestApiController {
     }
 
 
-    @Timer
+    @Timer // AOP의 어노테이션
     @DeleteMapping("/delete")
     public void delete() throws InterruptedException {
 
@@ -29,7 +29,7 @@ public class RestApiController {
         Thread.sleep(1000*2);
     }
 
-    @Decode
+    @Decode // AOP의 어노테이션
     @PutMapping("/put")
     public User put(@RequestBody User user){
         System.out.println("put");
