@@ -8,8 +8,8 @@
 해당 설정을 한 후에 생성한 Anotation을 AOP에 걸고 싶은 메소드 상단에 정의 하면 AOP target Method가 된다.
    
 ## 참조클래스
-API: RestApiController
-AOP: 
+API: RestApiController<br>
+Annotation: Decode, Timer<br>
+AOP
 - 클래스 범위지정: ParameterAop
 - 어노테이션 범위지정: TimerAop, DecodeAop
-Annotation: Decode, Timer
