@@ -30,6 +30,15 @@ public class ApiController {
 
 
 	// 명확하게 상태값을 다룸
+
+	/**
+	 *
+	 * @param user
+	 * @return
+	 *
+	 * ResponseEntity는 규격화된 반환타입 지정, 결과값 지정 및 DTO를 넣는다.
+	 */
+
 	@PutMapping("/put")
 	public ResponseEntity<User> pub(@RequestBody User user){
 		return ResponseEntity.status(HttpStatus.CREATED).body(user);
