@@ -13,6 +13,24 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) throws JsonProcessingException {
+
+        // ObjectMapper를 이용하여
+        //
+        /**
+         *
+         * dependency 추가함
+         * group: 'com.fasterxml.jackson.core', name: 'jackson-databind'
+         *
+         * ObjectMapper를 이용하여
+         * 1) DTO => String 변환
+         * 2) DTO => JSON(String)
+         * 3) JSON(String) => value(String or Int) 추출
+         *     objectMapper.readTree(json) : String Json을 objectMapper에서 읽는다
+         * 4) JSON(String) => value(List<DTO>) 추출
+         *      JsonNode => ArrayNode => objectMapper.convertValue
+         * 5) 정돈된 JSON 형태 String
+         *      JsonNode => ObejctNode => objectNode.toPrettyString()
+         */
         System.out.println("main");
 
         ObjectMapper objectMapper = new ObjectMapper();
@@ -50,10 +68,12 @@ public class Main {
         List<Car> _cars = objectMapper.convertValue(arrayNode, new TypeReference<List<Car>>() {});
         System.out.println(_cars);
 
+        // JSON 객체에서 Object 객체로 형변환
         ObjectNode objectNode = (ObjectNode) jsonNode;
         objectNode.put("name", "park");
         objectNode.put("age", 20);
 
+        // 정리된 JSON 형태로 보여준다.
         System.out.println(objectNode.toPrettyString());
 
     }

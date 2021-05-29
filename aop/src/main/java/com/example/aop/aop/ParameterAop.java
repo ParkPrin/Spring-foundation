@@ -14,6 +14,12 @@ import java.lang.reflect.Method;
 @Component
 public class ParameterAop {
 
+    /**
+     * Pointcut은 AOP가 실행될 범위를 지정할 수 있다.
+     * Before은 AOP Target 메소드가 진행 전 시점에서 실행될 메소드를 지정할 수 있다.
+     * AfterReturning은 AOP Target 메소드가 return 하는 시점에서 동작한다.
+     */
+
     @Pointcut("execution(* com.example.aop.controller..*.*(..))")
     private void cut(){}
 
