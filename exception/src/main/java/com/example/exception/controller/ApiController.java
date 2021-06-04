@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/user")
-@Validated
+@Validated // 유효성 어노테이션이 동작함
 public class ApiController {
 
 	@GetMapping("")
@@ -46,11 +46,6 @@ public class ApiController {
 		return user;
 	}
 
-	@ExceptionHandler(value = MethodArgumentNotValidException.class)
-	public ResponseEntity methodArgumentNotValidException(MethodArgumentNotValidException e){
-		System.out.println("api controller");
-		return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
-	}
 
 
 }
