@@ -113,8 +113,10 @@ public class RestTemplateService {
         request.setName("park");
         request.setAge(100);
         Req<UserRequest> req = new Req();
+        Req.Header header = new Req.Header();
+        header.setResponseCode("jonghoon");
         req.setHeader(
-                new Req.Header()
+                header
         );
 
         req.setResponseBody(
