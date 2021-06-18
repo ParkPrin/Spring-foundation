@@ -31,6 +31,7 @@ public class ServerApiController {
         response.setHeader(
                 new Req.Header()
         );
+        response.setHeader(user.getHeader());
         response.setResponseBody(user.getResponseBody());
         return response;
     }
