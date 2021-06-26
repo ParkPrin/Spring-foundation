@@ -2,8 +2,10 @@ plugins {
     id 'org.springframework.boot' version '2.5.2'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'jacoco' //jacoco는 테스트 커퍼리지 문서화한다.
 }
 
+// 실행방법은 verification에서 jacocoTestReport 하면된다.
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
